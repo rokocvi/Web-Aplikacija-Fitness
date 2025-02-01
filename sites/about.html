@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O aplikaciji</title>
+    <link rel="stylesheet" href="..\css\styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <p>Izračunaj indeks tjelesne mase.</p>
+
+        <div class="bmi-calculator">
+           <label for="weight">Težina(kg):</label>
+           <input type="number" id="weight" placeholder="Unesite težinu">
+           
+           <label for="height">Visina(cm):</label>
+           <input type="number" id="height" placeholder="Unesite visinu">
+           
+           <button id="calculate-bmi">Izračunaj BMI</button> 
+           <div id="bmi-result"></div>
+
+        </div>
+        <img src="..\images\body-mass-index-in-cm-and-kg-DYJX92.jpg" alt="BMI dijagram" class="bmi-dijagram">
+     
+        <div class="intervali">
+            <p>0-18.5 : Pothranjenost</p>
+            <p>18.5 - 24.9 : Normalna tjelesna težina</p>
+            <p>25 - 29.9 : Prekomjerna težina</p>
+            <p>>=30.0 : Pretilost</p>
+        </div>
+
+
+        <nav>
+                <a href="..\indexglavni.html">Home</a>
+                <a href="index.html">Kalkulator kalorija</a>
+                <a href="vjezbe.html">Vrste vježbi</a>
+                <a href="plans.html">Planovi prehrane</a>
+                <a>BMI calculator</a>
+                <a href="quiz.html">Fitness quiz</a>
+        </nav>
+        
+    </div>
+    <script src="..\js\bmi.js"></script>
+</body>
+</html>

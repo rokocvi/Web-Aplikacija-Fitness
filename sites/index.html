@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Plan</title>
+    <link rel="stylesheet" href="..\css\styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Kalkulator Potrošenih Kalorija</h1>
+        <div class="form-group">
+            <label for="exercise">Izaberite vežbu:</label>
+            <select id="exercise">
+                <option value="running">Trčanje</option>
+                <option value="cycling">Biciklizam</option>
+                <option value="swimming">Plivanje</option>
+                <option value="yoga">Joga</option>
+                <option value="strength">Trening snage</option>
+            </select>
+        </div>
+        <div id="strength-options" style="display:none;">
+            <label for="strengthExercise">Odaberi vježbu snage:</label>
+            <select id="strengthExercise">
+                <option value="pushups">Sklekovi</option>
+                <option value="bench_press">Bench press</option>
+                <option value="squats">Čučnjevi</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="input" id="input-label">Unesite broj minuta:</label>
+            <input type="number" id="input" min="1">
+        </div>
+        <button onclick="calculateCalories()">Izračunaj Kalorije</button>
+        <div id="result"></div>
+
+        <nav>
+            <a href="..\indexglavni.html">Home</a>
+            <a>Kalkulator kalorija</a>
+            <a href="vjezbe.html">Vrste vježbi</a>
+            <a href="plans.html">Planovi prehrane</a>
+            <a href="about.html">BMI calculator</a>
+            <a href="quiz.html">Fitness quiz</a>
+        </nav>
+    </div>
+
+    <script src="..\js\plans.js"></script>
+</body>
+</html>
