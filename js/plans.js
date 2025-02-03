@@ -30,7 +30,6 @@ function calculateCalories() {
     const exercise = document.getElementById('exercise').value;
     const input = parseFloat(document.getElementById('input').value);
 
-    // Provera da li je unos validan
     if (isNaN(input) || input <= 0) {
         document.getElementById('result').innerText = "Molimo unesite validan broj.";
         return;
@@ -51,8 +50,7 @@ function calculateCalories() {
    
     document.getElementById('result').innerText = `Potrošeno je ${totalCalories.toFixed(2)} kalorija.`;
 
-  
-    localStorage.setItem('calories', totalCalories);
+
 }
 
 document.getElementById('exercise').addEventListener('change', showStrengthOptions);

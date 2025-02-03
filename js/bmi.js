@@ -6,7 +6,7 @@ function calculateBMI() {
 
    
     if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
-        document.getElementById('bmi-result').innerText = "Molimo unesite validne vrednosti za težinu i visinu.";
+        document.getElementById('bmi-result').innerText = "Molimo unesite validne vrijednosti za težinu i visinu.";
         return;
     }
 
